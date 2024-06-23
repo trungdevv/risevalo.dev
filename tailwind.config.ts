@@ -18,7 +18,11 @@ const config = {
       },
     },
     extend: {
+      backgroundColor: {
+        brandBackground: '#0B0A0A'
+      },
       colors: {
+        brandGray: '#a3a3a38c',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

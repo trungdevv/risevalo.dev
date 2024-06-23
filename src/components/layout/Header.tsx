@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        "flex w-full items-center justify-between h-[80px]"
+        "flex w-full items-center justify-between h-[80px] relative"
       )}
     >
       <Link href="/">
@@ -32,9 +32,7 @@ const Header = () => {
           </Link>
         </div>
         <Link href="https://discord.gg/edgey">
-          <Button className="">
-            Discord
-          </Button>
+          <Button className="">Discord</Button>
         </Link>
       </div>
     </header>

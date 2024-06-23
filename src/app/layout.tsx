@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/layout/Header";
-import Image from "next/image";
+import "@/styles/globals.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,25 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-[#111317] text-[#FAFAFA]">
-        <div className="relative ">
-        <div className="absolute z-1 w-full h-full bg-gradient-to-b from-transparent via-transparent to-[#111317]" />
-        {/* <Image
-          alt="fornite background"
-          loading="lazy"
-          width="1920"
-          height="1080"
-          decoding="async"
-          data-nimg="1"
-          className="absolute z-0 opacity-10 min-w-[1920px] w-full"
-          src="/images/bg-header.webp"
-        /> */}
-        </div>
-       
-        <div className="overflow-clip max-w-[1400px] mx-auto px-4">
-        <Header />
-          {children}
-        </div>
+      <body>
+        <div>{children}</div>
       </body>
     </html>
   );
