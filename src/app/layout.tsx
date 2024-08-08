@@ -3,8 +3,9 @@ import { Bakbak_One as FontSans } from "next/font/google";
 import "@/styles/globals.css";
 import Header from "@/components/layout/Header";
 import { cn } from "@/lib/utils";
+import Script from "next/script";
 const fontSans = FontSans({
-  weight: '400',
+  weight: "400",
   subsets: ["latin"],
   variable: "--font-sans",
 });
@@ -21,14 +22,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}
+        suppressHydrationWarning={true}
       >
         <Header />
         <div>{children}</div>
+        <Script src="https://cdn.sellix.io/static/js/embed.js" />
       </body>
     </html>
   );

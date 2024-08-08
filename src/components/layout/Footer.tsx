@@ -2,54 +2,39 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Logo from "../Logo";
 
-const Header = () => {
+const Footer = () => {
   return (
-    <header
-      className={cn(
-        "h-header bg-secondary sticky left-0 right-0 top-0 z-50 flex w-full items-center justify-between py-4"
-      )}
-    >
-      <div className="container flex items-center justify-between">
-        <Link href="/">
-          <Logo />
-        </Link>
-        <div className="flex flex-row items-center gap-2">
-          <div className="hidden flex-row items-center gap-2 sm:flex">
-            <a href="/">
-              <button className="inline-flex items-center select-none justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">
-                Home
-              </button>
+    <footer className="bg-[#121212]">
+      <div className="px-4 py-6 lg:py-8 container">
+        <div className="flex justify-between  items-end ">
+          <Link className="flex justify-between items-center gap-2" href="/">
+            <Logo /> VIVIANWARE
+          </Link>
+          <Link href="/tos">Terms of Service</Link>
+        </div>
+        <div className="flex flex-col gap-4 items-center md:flex-row md:items-baseline md:justify-between">
+          <p className="text-sm text-gray-300">
+            © 2024
+            <a href="https://risevalo.dev" className="hover:underline">
+              RiseProducts
             </a>
-            <a href="/#products">
-              <button className="inline-flex items-center select-none justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">
-                Products
-              </button>
+            . All Rights Reserved.
+          </p>
+          <p className="text-xs text-gray-400">
+            Powered by
+            <a
+              href="https://sellcustom.dev"
+              target="_blank"
+              className="underline"
+            >
+              SellCustom
             </a>
-            <a href="/#reviews">
-              <button className="inline-flex items-center select-none justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">
-                Reviews
-              </button>
-            </a>
-            <a href="/#faq">
-              <button className="inline-flex items-center select-none justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">
-                Faq
-              </button>
-            </a>
-            <a href="/status">
-              <button className="inline-flex items-center select-none justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">
-                Status
-              </button>
-            </a>
-          </div>
-          <a href="https://discord.gg/edgey">
-            <button className="inline-flex items-center select-none justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-brand text-brand-foreground shadow-sm hover:bg-brand/80 h-9 px-4 py-2">
-              Discord
-            </button>
-          </a>
+            .
+          </p>
         </div>
       </div>
-    </header>
+    </footer>
   );
 };
 
-export default Header;
+export default Footer;
