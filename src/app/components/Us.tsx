@@ -13,7 +13,7 @@ async function ChoseUs({}) {
       </h2>
       <div className="grid lg:grid-cols-3 gap-8">
         <div className="flex items-center flex-col">
-          <ShieldCheck fill="#02c2d8" size={"64"} />
+          <ShieldCheck className="fill-accent" size={"64"} />
           <h3 className="text-xl font-semibold font-title uppercase mb-2">
             Secure &amp; Trusted
           </h3>
@@ -24,7 +24,7 @@ async function ChoseUs({}) {
         </div>
 
         <div className="flex items-center flex-col">
-          <Cog fill="#02c2d8" size={"64"} />
+          <Cog className="fill-accent" size={"64"} />
           <h3 className="text-xl font-semibold font-title uppercase mb-2">
             EASILY &amp; CUSTOMIZABLE
           </h3>
@@ -34,7 +34,7 @@ async function ChoseUs({}) {
           </p>
         </div>
         <div className="flex items-center flex-col">
-          <Clock fill="#02c2d8" size={"64"} />
+          <Clock className="fill-accent" size={"64"} />
           <h3 className="text-xl font-semibold font-title uppercase mb-2">
             QUICK &amp; SUPPORT
           </h3>

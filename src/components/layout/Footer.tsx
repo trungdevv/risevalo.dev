@@ -14,20 +14,20 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-4 items-center md:flex-row md:items-baseline md:justify-between">
           <p className="text-sm text-gray-300">
-            © 2024
+            © 2024&nbsp;
             <a href="https://risevalo.dev" className="hover:underline">
-              RiseProducts
+              Vivianware
             </a>
             . All Rights Reserved.
           </p>
           <p className="text-xs text-gray-400">
-            Powered by
+            Powered by&nbsp;
             <a
               href="https://sellcustom.dev"
               target="_blank"
               className="underline"
             >
-              SellCustom
+              Vivianware
             </a>
             .
           </p>

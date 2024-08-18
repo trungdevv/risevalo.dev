@@ -23,7 +23,7 @@ async function FAQ({}) {
           <AccordionItem value="item-1">
             <AccordionTrigger>Why should you choose us?</AccordionTrigger>
             <AccordionContent>
-              At Rise, we offer high tier customer support like no other place,
+              At Vivianware, we offer high tier customer support like no other place,
               and we value customers over everything. Purchasing from us comes
               with reliability. All of our products are affordable and come with
               quality. We care about our customers and understand both
